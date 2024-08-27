@@ -27,49 +27,48 @@ Program to implement the simple linear regression model for predicting the marks
 Developed by: MERCY A
 RegisterNumber:  212223110027
 */
-
-import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+import pandas as pd
 from sklearn.metrics import mean_absolute_error,mean_squared_error
-df=pd.read_csv('student_scores.csv')
-print(df)
-df.head(0)
-df.tail(0)
-print(df.head())
-print(df.tail())
-x = df.iloc[:,:-1].values
-print(x)
-y = df.iloc[:,1].values
-print(y)
+import matplotlib.pyplot as plt
+dataset=pd.read_csv('student_scores.csv')
+print(dataset.head())
+print(dataset.tail())
+dataset.info()
+X=dataset.iloc[:,:-1].values
+print(X)
+Y=dataset.iloc[:,-1].values
+print(Y)
 from sklearn.model_selection import train_test_split
-x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=1/3,random_state=0)
+X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=0.2,random_state=0)
+print(X_train.shape)
+print(X_test.shape)
 from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
-regressor.fit(x_train,y_train)
-y_pred = regressor.predict(x_test)
-print(y_pred)
-print(y_test)
-#Graph plot for training data
-plt.scatter(x_train,y_train,color='black')
-plt.plot(x_train,regressor.predict(x_train),color='blue')
+reg=LinearRegression()
+reg.fit(X_train,Y_train)
+Y_pred=reg.predict(X_test)
+print(Y_pred)
+print(Y_test)
+plt.scatter(X_train,Y_train,color='black')
+plt.plot(X_train,reg.predict(X_train),color='blue')
 plt.title("Hours vs Scores(Training set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-#Graph plot for test data
-plt.scatter(x_test,y_test,color='black')
-plt.plot(x_train,regressor.predict(x_train),color='red')
+plt.scatter(X_test,Y_test,color='black')
+plt.plot(X_train,reg.predict(X_train),color='red')
 plt.title("Hours vs Scores(Testing set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-mse=mean_absolute_error(y_test,y_pred)
+mse=mean_absolute_error(Y_test,Y_pred)
 print('MSE = ',mse)
-mae=mean_absolute_error(y_test,y_pred)
+mae=mean_absolute_error(Y_test,Y_pred)
 print('MAE = ',mae)
 rmse=np.sqrt(mse)
 print("RMSE= ",rmse)
+
+
 ```
 
 ## Output:
