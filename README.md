@@ -3,9 +3,11 @@
 ## AIM:
 To write a program to predict the marks scored by a student using the simple linear regression model.
 
+
 ## Equipments Required:
 1. Hardware – PCs
 2. Anaconda – Python 3.7 Installation / Jupyter notebook
+
 
 ## Algorithm
 1.Import the standard Libraries.
@@ -19,6 +21,8 @@ To write a program to predict the marks scored by a student using the simple lin
 5.Predict the regression for marks by using the representation of the graph.
 
 6.Compare the graphs and hence we obtained the linear regression for the given datas. 
+
+
 
 ## Program:
 ```python
@@ -69,27 +73,34 @@ print('MAE = ',mae)
 rmse=np.sqrt(mse)
 print("RMSE= ",rmse)
 
-
 ```
+
 
 ## Output:
 #### Head and Tail:
 ![Screenshot 2024-08-27 111210](https://github.com/user-attachments/assets/1cdec813-4603-41b1-a12f-4565f460ec33)
 
+
 #### Array value of X and Y:
 ![Screenshot 2024-08-27 111401](https://github.com/user-attachments/assets/921ba0af-721d-4ca2-8026-c58074a37151)
+
 
 #### Y prediction and Y test values:
 ![Screenshot 2024-08-27 111526](https://github.com/user-attachments/assets/a995effc-c335-41f4-a823-40b9d8d25b11)
 
+
 #### Training set graph:
 ![Screenshot 2024-08-27 111726](https://github.com/user-attachments/assets/f66f81e9-c5b3-46b2-8ea2-aa574d8a0d80)
+
 
 #### Testing set graph:
 ![Screenshot 2024-08-27 111734](https://github.com/user-attachments/assets/babe4f24-27fb-496b-98fd-66b3127e277a)
 
+
 #### Value of MSE,MAE,RMSE:
 ![Screenshot 2024-08-27 111800](https://github.com/user-attachments/assets/45242876-ac6f-4365-90b2-cb7bf7e90c56)
+
+
 
 ## Result:
 Thus the program to implement the simple linear regression model for predicting the marks scored is written and verified using python programming.
