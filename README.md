@@ -54,14 +54,14 @@ reg.fit(X_train,Y_train)
 Y_pred=reg.predict(X_test)
 print(Y_pred)
 print(Y_test)
-plt.scatter(X_train,Y_train,color='black')
-plt.plot(X_train,reg.predict(X_train),color='blue')
+plt.scatter(X_train,Y_train,color='red')
+plt.plot(X_train,reg.predict(X_train),color='black')
 plt.title("Hours vs Scores(Training set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
 plt.show()
-plt.scatter(X_test,Y_test,color='black')
-plt.plot(X_train,reg.predict(X_train),color='red')
+plt.scatter(X_test,Y_test,color='blue')
+plt.plot(X_train,reg.predict(X_train),color='green')
 plt.title("Hours vs Scores(Testing set)")
 plt.xlabel("Hours")
 plt.ylabel("Scores")
@@ -90,16 +90,13 @@ print("RMSE= ",rmse)
 
 
 #### Training set graph:
-![Screenshot 2024-08-27 111726](https://github.com/user-attachments/assets/f66f81e9-c5b3-46b2-8ea2-aa574d8a0d80)
 
 
 #### Testing set graph:
-![Screenshot 2024-08-27 111734](https://github.com/user-attachments/assets/babe4f24-27fb-496b-98fd-66b3127e277a)
-
+![Screenshot 2024-08-28 103219](https://github.com/user-attachments/assets/fc7549ab-6de0-49bf-9d0d-4d3408f23949)
 
 #### Value of MSE,MAE,RMSE:
-![Screenshot 2024-08-27 111800](https://github.com/user-attachments/assets/45242876-ac6f-4365-90b2-cb7bf7e90c56)
-
+![Screenshot 2024-08-28 103226](https://github.com/user-attachments/assets/e4d702f6-d3d8-4e06-bab6-e580efffd191)
 
 
 ## Result:
