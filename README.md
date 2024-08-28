@@ -86,10 +86,12 @@ print("RMSE= ",rmse)
 
 
 #### Y prediction and Y test values:
-![Screenshot 2024-08-27 111526](https://github.com/user-attachments/assets/a995effc-c335-41f4-a823-40b9d8d25b11)
+![Screenshot 2024-08-28 103200](https://github.com/user-attachments/assets/de587102-2885-4f89-8693-12943771b33d)
+
 
 
 #### Training set graph:
+![Screenshot 2024-08-28 103210](https://github.com/user-attachments/assets/abf4ea89-ae36-4400-8b96-625d9dcca3a4)
 
 
 #### Testing set graph:
